@@ -1,0 +1,16 @@
+*
+There 3 types:
++) Integer: It is just numbers, like 2, 3, ...
++) Float: It is numbers with a decimal point like 2.2, 2.0, ...
++) String: It contains a string of letter insida the single quotation mark
+ or if you still don't know the variable’s type  the interpreter can tell you:
+ Type the code : type( *variables) then press Enter, the type of the variable will appear
+
+*
+Invalid names:
++) 69hihi='Lam bai met qua'
+It's illegal because it starts with a number not a letter
++) from='Duc dep zai'
+It's illegal because "from" is one of Python's keywords
++ sap$='co euro'
+It's illegal because it contains an illegal character
