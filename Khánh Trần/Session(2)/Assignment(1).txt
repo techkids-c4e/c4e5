@@ -1,0 +1,10 @@
+##To check variable's type
+
+>>i = 123
+>>type(i) 
+
+##Examples for invaild names:
+
+>> 76trombones = 'big parade' (not begin with a letter)
+>> more@ (contains an illegal character, @ )
+>> class = 'Advanced Theoretical Zymurgy' ('class' is one of Python’s keywords)
