@@ -1,0 +1,5 @@
+1, type the code: >>type(*name of the variable) to check type of the variable
+2, 3 examples of invalid names:
+	- $9     starts with a number
+	- a % = 10 (% is neither number or letter)
+        - for = 5 (for is a Python's keyword)
