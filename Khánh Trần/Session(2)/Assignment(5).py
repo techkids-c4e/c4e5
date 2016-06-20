@@ -1,5 +1,4 @@
 ## a program that calculates the number of pair of rabbit after 4 months
-import math
 def fib(n):
     if n == 0:
         return 0
