@@ -1,0 +1,5 @@
+1, type the code: >>type(*name of the variable) to check type of the variable
+2, 3 examples of invalid names:
+	- print = 3 (print is a Python's keyword)
+	- 7str = 'Huy' (the variable's name cant be began with number)
+	- me% = 7 (% is not neither number or letter)
