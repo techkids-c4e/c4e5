@@ -1,0 +1,8 @@
+String: green colour and in quotation mark
+Integer: number with no decimal
+Float: decimal number
+
+Syntax error:
+2 + "abc"
+Hello
+"Hello" + abc
