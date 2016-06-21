@@ -1,0 +1,18 @@
+#Bai 1:
+- How to check a variable’s type?
+
+Use Python Shell to check variable’s type
+
+Example:
+>>> type("Viet nam")
+<class 'str'>
+>>> type(17)
+<class 'int'>
+>>> type("17")
+<class 'str'>
+
+- 3 different examples of invalid names
+
+29vietnam => it does not begin with a letter
+home#work => it contains an illegal character, #
+continue =>  continue is one of Python’s keywords

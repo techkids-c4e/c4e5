@@ -1,0 +1,7 @@
+#How to check a variable's type?
+Use interpreter: type(variables)
+
+#Give 3 different examples of invalid variable names?
+##Not begin with a letter: 13elieve
+##illegal charater:%percent
+##Python's keyword: with
