@@ -1,5 +1,0 @@
-a) >>>type (value) 
-
-b) 12abc= "def"
- if= 15
- for= "17"
