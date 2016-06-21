@@ -2,8 +2,8 @@
 There 3 types:
 +) Integer: It is just numbers, like 2, 3, ...
 +) Float: It is numbers with a decimal point like 2.2, 2.0, ...
-+) String: It contains a string of letter insida the single quotation mark
- or if you still don't know the variable’s type  the interpreter can tell you:
++) String: It contains a string of letter insids the single quotation mark
+ or if you still don't know the variableâ€™s type  the interpreter can tell you:
  Type the code : type( *variables) then press Enter, the type of the variable will appear
 
 *
