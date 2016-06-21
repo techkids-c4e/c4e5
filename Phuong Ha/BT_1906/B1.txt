@@ -1,7 +1,8 @@
-#check variable's type
+##check variable's type
 >>type(variable's name)
 
-#invalid names
+
+##invalid names
 That name doesn’t begin with a letter ('2hottoday')
 That name contains an illegal character (hanoi®)
 That name is one of Python’s keywords (as)
