@@ -1,7 +1,7 @@
 mature=0
 newborn=1
 conclusion=""
-for x in range(4):
+for x in range(8):
 	total=mature+newborn #total number of rabit
 	newborn=mature       #newborn this month
 	mature=total         #Total mature at end this month

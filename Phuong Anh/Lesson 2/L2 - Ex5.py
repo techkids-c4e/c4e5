@@ -1,5 +1,5 @@
 print('Exercise 5: Number of pair of rabbit after 4 month')
-for month in range(5):
+for month in range(15):
     def rabbit(month):
         if month == 0:
             return 1
