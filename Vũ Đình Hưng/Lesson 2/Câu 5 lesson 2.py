@@ -1,4 +1,3 @@
-count = 0
 x = 4
 y = 6
 for a in range (4):
