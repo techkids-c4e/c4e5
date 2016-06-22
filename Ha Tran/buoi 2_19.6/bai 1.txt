@@ -2,6 +2,6 @@
 Use interpreter: type(variables)
 
 #Give 3 different examples of invalid variable names?
-##Not begin with a letter: 13elieve
-##illegal charater:%percent
-##Python's keyword: with
+##Not begin with a letter: 13elieve = 3
+##illegal charater:%percent = 'percent'
+##Python's keyword: with = 5.89
