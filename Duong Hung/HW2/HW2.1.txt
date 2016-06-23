@@ -1,0 +1,9 @@
+#Check variable's type
+
+>>type() 
+
+#Examples for invaild names:
+
+>> 12abc (not begin with a letter)
+>> ab#c (contains an illegal character, # )
+>> and  ('and' is one of Python’s keywords)
