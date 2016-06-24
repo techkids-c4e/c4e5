@@ -1,6 +1,6 @@
 x=0
 y=1
-for i in range (4):
+for i in range (7):
     a=x+y
     x=y
     y=a
