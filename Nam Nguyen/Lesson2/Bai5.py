@@ -3,5 +3,5 @@ def fib(n):
         return 1
     else:
         return fib(n-1) + fib(n-2)
-for i in range(4):
+for i in range(8):
     print("Month ",i,": ",fib(i)," pair(s) of rabbits")

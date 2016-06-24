@@ -1,0 +1,5 @@
+x=int(input("initial B bacteria number"))
+y=int(input("period of time (in minutes)"))
+z=x*2**(y//2)
+int(z)
+print(str.format("After {0} minutes we would have {1} bacterias",y,z))
