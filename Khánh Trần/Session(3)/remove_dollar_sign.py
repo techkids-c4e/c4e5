@@ -7,3 +7,4 @@ if string_with_no_dollars == "80% percent of life is showing up":
 else:
     print("Oops, there's a bug") 
 
+
