@@ -6,3 +6,4 @@ if t > 1 :
     print('After',t,'minues we would have',b2,'bacterias')
 else:
     print('After',t,'minues we would have',b1,'bacterias')
+
