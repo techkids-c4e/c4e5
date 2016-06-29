@@ -14,6 +14,3 @@ print('After sheering, here is my flock',kichco_cuu)
 ##print('One month has passed, now here is my flock',kichco_cuu)
 new_list=[50+size for size in kichco_cuu]
 print('One month has passed, now here is my flock',new_list)
-
-
-    
