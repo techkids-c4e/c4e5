@@ -19,6 +19,7 @@ for month in range(4):
         kichco_cuu[kichco_cuu.index(x)]=8
         print('After sheering, here is my flock',kichco_cuu)
         
+#2.6
 total_size=sum(kichco_cuu)
 print('My flock has size in total:',total_size)
 print('I would get',total_size,'* 2$ =',total_size*2,'$')
