@@ -3,9 +3,7 @@ kichco_cuu=[5,7,300,90,24,50,75]
 print('Hello, my name is Ha and here is my flock',kichco_cuu)
 
 for month in range(4):  
-    if month==0:
-        x=max(kichco_cuu)
-    else:
+    if month>0:
         print('MONTH',month,':')
         kichco_cuu=[50+size for size in kichco_cuu]
         print('One month has passed, now here is my flock',kichco_cuu)
