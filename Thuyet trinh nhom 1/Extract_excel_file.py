@@ -18,7 +18,7 @@ from os import *
 
 def dailysalary(pos,date,checkin,checkout):
     p=0
-    a=30000000
+    a=300000
     if pos=="Chuyên viên":
         p=1
     elif pos=="Trưởng phòng":
@@ -37,9 +37,10 @@ def dailysalary(pos,date,checkin,checkout):
     return(s)
     
     
-    
+#lấy danh sách file trong thư mục
 thu_muc=input("Duong dan den thu muc chua file cham cong: ")
 file_list=[thu_muc+"\\"+ file for file in os.listdir(thu_muc)]
+
 #Chuan bi file excel
 twb=Workbook()
 tws=twb.active
@@ -47,35 +48,35 @@ tws['A1'].value="Tên nhân viên"
 tws['B1'].value="Chức vụ"
 tws['C1'].value="Lương tháng"
 count=0
+
+#Thực hiện tính toán với từng file
 for i in file_list:
 #check xem file co phai la file excel
     if i.split(".")[-1]!="xlsx":
         continue
+#lấy dữ liệu trên file
     wb=load_workbook(i,data_only=True)
-    
     ws=wb.active
     name=ws.cell('B1').value  #tên người
     pos=ws.cell('B2').value  #Vị trí
     monthsalary=0
-    
+#Tính toán
     for row in range(6,ws.max_row):
         date=ws['A'+str(row)].value
         checkin=ws['B'+str(row)].value
         checkout=ws['C'+str(row)].value
         if date==None or checkin==None or checkout==None:
             continue
-    #    print(str(row))
-    #    print(type(date))
-    #    print(type(checkin))
-    #    print(str(date),str(checkin),str(checkout))
         monthsalary+=dailysalary(pos,date,checkin,checkout)
-    #print(monthsalary)
-    x=str(tws.max_row+1) # đặt đây nếu không hàng sẽ tăng lên
-    print(x)
+        
+#ghi dữ liệu sang file excel tổng hợp    
+    x=str(tws.max_row+1)
     tws['A'+x]=name
     tws['B'+x]=pos
     tws['C'+x]=monthsalary
     count+=1
+    
+#Save file
 savefile="tonghop.xlsx"
     
 twb.save(savefile)
