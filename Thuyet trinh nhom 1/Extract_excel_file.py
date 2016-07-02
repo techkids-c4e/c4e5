@@ -16,7 +16,7 @@ from datetime import *
 from openpyxl import *
 from os import *
 
-def dailysalary(date,checkin,checkout):
+def dailysalary(pos,date,checkin,checkout):
     p=0
     a=30000000
     if pos=="Chuyên viên":
@@ -26,11 +26,11 @@ def dailysalary(date,checkin,checkout):
     elif pos=="Giám đốc":
         p=10
     
-    if date.weekday()<=5:
+    if date.weekday()<=4:
         d=1
         s=(checkout-checkin)*p*d*a 
  #co the them truong hop di som, di muon, lam ngoai gio etc vao day
-    elif date.weekday()>5:
+    elif date.weekday()>4:
         d=2
         s=(checkout-checkin)*p*d*a
 #ngay nghi luong x2
@@ -68,7 +68,7 @@ for i in file_list:
     #    print(type(date))
     #    print(type(checkin))
     #    print(str(date),str(checkin),str(checkout))
-        monthsalary+=dailysalary(date,checkin,checkout)
+        monthsalary+=dailysalary(pos,date,checkin,checkout)
     #print(monthsalary)
     x=str(tws.max_row+1) # đặt đây nếu không hàng sẽ tăng lên
     print(x)
