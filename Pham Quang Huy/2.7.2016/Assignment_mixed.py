@@ -1,4 +1,4 @@
-#1
+# Wave 1
 
 list_1 = [{"full_name":"Tran Quang Hiep","class":"C4E","rate":"$6.70","session":17},
 {"full_name":"Nguyen Quang Huy","class":"iOS","rate":"$8.38","session":18},
@@ -9,7 +9,7 @@ list_1 = [{"full_name":"Tran Quang Hiep","class":"C4E","rate":"$6.70","session":
 for x in list_1 :
     print(x["full_name"],'teached :',x["session"],"salary :",x["rate"])
 
-#2
+# Wave 2
 list_ = []
 string_ = input("Please enter your information: ")
 a = string_.split(" ")
@@ -18,6 +18,8 @@ x =         {"name"     : a[0].title(),
              "rate"     : int(a[2])}
 print(x["name"],'teached :',x["session"],"salary :",x["rate"])
 list_.append(x)
+
+# Wave 5
 def Payroll(x):
     res = -1
     for item in list_:
@@ -35,7 +37,7 @@ if res >= 0 :
 else :
     print(name,"not found")
 
-#3
+# Wave 6
 def update_one(string_):
     a = string_.split(" ")
     a[0] = a[0].lower()
@@ -48,7 +50,7 @@ a = input("Enter infomation you need to update: ")
 update_one(a)
 print("Your information has been updated")
 
-#4
+# Wave 7
 
 def delete(string_):
     res = False
@@ -67,7 +69,7 @@ if res == True :
 else :
     print(name,"not found")
 
-#5 : Full program
+# Wave 8 : Full program
 
 def Read():
     for item in list_:
@@ -77,7 +79,6 @@ print("Hello, this is a salary program.")
 while True:
     command = input("select your function (Creat, Read, Update, Delete): ")
     command = command.strip()
-    print(command)
     command = command.lower()
     if command == "read" :
         Read()
