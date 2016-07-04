@@ -6,3 +6,4 @@ mail.starttls()
 mail.login('hatt1992@gmail.com','thuha1992')
 mail.sendmail('hatt1992@gmail.com','hatt1992@gmail.com','hi there')
 mail.close()
+
