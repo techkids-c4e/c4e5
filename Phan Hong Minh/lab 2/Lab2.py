@@ -35,8 +35,8 @@ def payroll():
 def update_info():
     x=input('Please enter your information: ').split(" ")
     updated_info = {'full_name': x,
-                    'rate': z,
-                    'session': t}
+                    'rate': x[1],
+                    'session': x[2]}
     for person in salary:
         if person['full_name'] == x[0]:
             person['session'] = int(x[1])
