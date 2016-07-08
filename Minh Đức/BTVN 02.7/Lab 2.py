@@ -51,7 +51,7 @@ def show_salary():
             total= float(y["session"])*float(y["rate"])
             print(name,"total salary is: ",total)
             break
-def update_one():
+def update_one(): #em ko nghĩ ra cách dùng mongo nên dùng tạm cách này 
    x=input("Please enter your information: ")
    x_list=x.split()
    for a in wave_1:
