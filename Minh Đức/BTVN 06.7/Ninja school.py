@@ -23,16 +23,16 @@ Ninja_list=[Naruto, Gaara, Zabuza, Deidara]
 print("--------------------Naruto attacks Gaara--------------------")
 Naruto.attack(Gaara)
 for ninja in Ninja_list:
-    ninja.print()
+    print(ninja.name,ninja.HP)
 print("--------------------Zabuza attacks Naruto--------------------")
 Zabuza.attack(Naruto)
 for ninja in Ninja_list:
-    ninja.print()
+    print(ninja.name,ninja.HP)
 print("--------------------Gaara attacks Deidara--------------------")
 Gaara.attack(Deidara)
 for ninja in Ninja_list:
-    ninja.print()
+    print(ninja.name,ninja.HP)
 print("--------------------Deidara attacks Zabuza--------------------")
 Deidara.attack(Zabuza)
 for ninja in Ninja_list:
-    ninja.print()
+    print(ninja.name,ninja.HP)
