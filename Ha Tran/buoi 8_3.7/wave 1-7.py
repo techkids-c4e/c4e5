@@ -29,6 +29,7 @@ name=input('Which one you want to know the total salary')
 def Payroll(name):  
     for dict_ in list_:
         if dict_["full_name"]==name:
+            dict_["rate"]=dict_["rate"].replace("$","")
             total=float(dict_["rate"])*int(dict_["session"])
             return total
 print(name, 'total salary is:', Payroll(name))
@@ -60,5 +61,3 @@ def Delete(name):
             return list_
 Delete(name)
 print(name,'deleted!')
-
-
