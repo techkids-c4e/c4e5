@@ -14,8 +14,8 @@ class City:
         self.la=lat
 
     def calculateDistance(self,city):
-        distance=(((city["longt"]-self.lo)**2+(city["lat"]-self.la)**2)*0.5)
-        print('The distance is: ',distance)
+        distance=(((city["longt"]-self.lo)**2+(city["lat"]-self.la)**2)**0.5)
+        print('The distance is: ',round(distance,2))
 
 
 Hanoi=City(hanoi["name"],hanoi["longt"],hanoi["lat"])
