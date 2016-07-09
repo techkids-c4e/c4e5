@@ -11,25 +11,25 @@ for i in data:
 #wave2
 dulieumoi = input('Nhap du lieu moi (Name, session, rate): ')
 a = dulieumoi.split()
-b = {"Name":a[0],
+b = {"name":a[0],
     "session":a[1],
     "rate":a[2]}
 data.append(b)
 def tachdulieu(name, session, rate):
-    print(b["Name"], 'teached:', b["session"],'rate:', b["rate"],'$')
-x = tachdulieu(b["Name"],b["session"],b["rate"]) #tai sao xoa di code lai khong chay?
+    print(b["name"], 'teached:', b["session"],'rate:', b["rate"],'$')
+x = tachdulieu(b["name"],b["session"],b["rate"]) #tai sao xoa di code lai khong chay?
 
 
 #Wave5
-#nhapten=str(input('Which one you want to know the total salary ?'))
+nhapten=str(input('Which one you want to know the total salary ?'))
 
-#def Payroll(nhapten):
-#    for i in data:
-#        if nhapten == i["name"]:
-#            salary = float(i["rate"])*i["session"]
-#    return salary
+def Payroll(nhapten):
+    for i in data:
+        if nhapten == i["name"]:
+            salary = float(i["rate"])*i["session"]
+    return salary
 
-#salary=str('notfound')
-#Payroll(nhapten)
-#print(salary)
+##salary = str('notfound')
+Payroll(nhapten)
+print(Payroll(nhapten))
 
