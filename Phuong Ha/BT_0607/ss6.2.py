@@ -13,12 +13,12 @@ while True:
                         print('Please insert more coins')
                         
     drinkInfo=[
-                {'name': 'Coke', 'price': 7, 'button':1},
-                {'name': 'Energy', 'price': 10, 'button':2},
-                {'name': 'Water', 'price': 5, 'button':3}
-                ]
+        {'name': 'Coke', 'price': 7, 'button':1},
+        {'name': 'Energy', 'price': 10, 'button':2},
+        {'name': 'Water', 'price': 5, 'button':3}
+            ]
     V=VendingMachine(drinkInfo)
     button=int(input('button'))
     coin=int(input('Inser coins'))
 
-    V.getDrink(coin,button)
+    V.getDrink(button,coin)
