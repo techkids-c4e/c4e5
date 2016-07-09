@@ -29,12 +29,21 @@ class Ninja:
         
     
     def battle(a,b,c,d):
+        n=[a,b,d,c]
         while a.HP+b.HP+c.HP+d.HP>max(a.HP,b.HP,c.HP,d.HP):
-            a.attack(b)
-            c.attack(a)
-            b.attack(d)
-            d.attack(c)
-
+            for i in [0,3,1,2]:
+                
+                if n[i].HP>0:
+                    if n[(i+1)%4].HP>0:
+                        n[i].attack(n[(i+1)%4])
+                    else:
+                        if n[(i+2)%4].HP>0:
+                            n[i].attack(n[(i+2)%4])
+                        else:
+                            if n[(i+2)%4].HP>0:
+                                n[i].attack(n[(i+2)%4])
+                           
+               
         for i in [a,b,c,d]:
             if i.HP==max(a.HP,b.HP,c.HP,d.HP):
                 print('Winner: ',i.name)
