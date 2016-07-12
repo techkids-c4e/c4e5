@@ -60,12 +60,12 @@ class Character:
     
     def update(self):
         self.move()
-        if (self.checkboundery() == True) and (self.checkobstack(door_) == False):
+        if (self.checkboundery() == True) and (self.checkobstack(door_) == False) :
             if self.checkobstack(box_) == True:
                 i = self.findbox()
                 box[i].speedX = self.speedX
                 box[i].speedY = self.speedY
-                if box[i].checkboundery() == True:
+                if (box[i].checkboundery() == True) and (box[i].checkobstack(box_) == False):
                     if box[i].checkobstack(door_) == False:
                         box[i].draw()
                     elif box[i].checkobstack(door_):
