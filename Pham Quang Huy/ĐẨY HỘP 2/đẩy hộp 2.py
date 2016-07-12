@@ -93,7 +93,7 @@ box = []
 
 nDoor = int(input("Pls enter number of door: "))
 for i in range(nDoor):
-    D = input("Enter position of door (x, y): ").split(" ")
+    D = input("Enter position of door ",i + 1," (x, y): ").split(" ")
     door_ = Character("D",int(D[0]),int(D[1]))
     door.append(door_)
 
@@ -101,7 +101,7 @@ for i in range(nDoor):
 
 nBox = int(input("pls enter number of box: "))
 for i in range(nBox):
-    B = input("Enter position of the box(x, y): ").split(" ")
+    B = input("Enter position of the box ",i + 1," (x, y): ").split(" ")
     box_ = Character("B",int(B[0]),int(B[1]))
     box.append(box_)
 ##print(len(box))
