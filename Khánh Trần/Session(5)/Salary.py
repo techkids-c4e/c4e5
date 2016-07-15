@@ -8,11 +8,11 @@ def Create():
     Salary.append(x)
     print(a,"teached:",b,"salary:",c)
 def Read():
-    d = str(input("Which one you want to know the total salary? "))
+    d = input("Which one you want to know the total salary? ")
     for item in Salary:
         if d == item["full_name"]:
             total = float(item["session"]) * float(item["rate"])           
-    print(d,"total salary is:",total)
+    print(d,"total salary is:",total,"$")
 def Update():
     a,b,c =  input("Please enter your infomation: ").split()
     for item in Salary:
@@ -26,8 +26,9 @@ def Delete():
         if e == item["full_name"]:
             Salary.remove(item)
     print(Salary)
-    
-Salary = [
+
+
+Salary[
           {"full_name":"Tran Quang Hiep","class":"C4E","rate":"6.70","session":17},
           {"full_name":"Nguyen Quang Huy","class":"iOS","rate":"8.38","session":18},
           {"full_name":"Nguyen Thanh Cuong","class":"WEB","rate":"7.34","session":19},

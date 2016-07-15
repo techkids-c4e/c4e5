@@ -1,0 +1,17 @@
+class City:
+    def print(self):
+        print("name:",self.name)
+        print("longt:",self.longt)
+        print("lat:",self.lat)
+    def __init__(self, n, l, la):
+        self.name = n
+        self.longt = l
+        self.lat = la
+hanoi = City("Hanoi", 50, 75)
+haiduong = City("HaiDuong", 25, 10)
+city_list=[hanoi,haiduong]
+for city in city_list:
+    city.print()
+distance = ((50-25)**2+(75-10)**2)**1/2
+print("hanoi.calculateDistance(haiduong)")
+print(distance)
