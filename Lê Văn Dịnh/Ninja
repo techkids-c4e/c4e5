@@ -1,0 +1,29 @@
+class Ninja:
+    def print(self):
+        print("name:",self.name)
+        print("village:",self.village)
+        print("healthPoint:",self.heathPoint)
+        print("attackPoint:",self.attackPoint)
+        print("defensePoint:",self.defensePoint)
+    def __init__(self, n, v, hp, atk, de):
+        self.name = n
+        self.village = v
+        self.heathPoint = hp
+        self.attackPoint = atk
+        self.defensePoint = de
+    def attack(self, enemy):
+        if self.atk > enemy.de:
+            enemy.hp = enemy.hp- (self.atk-enemy.de)
+        elif self.atk < enemy.de:
+            self.hp = self.hp- ( enemy.de - self.atk)
+        else :
+            enemy.hp = enemy.hp       
+naruto = Ninja("Naruto", "leaf", 11, 7, 4)
+gaara = Ninja("Gaara", "sand", 12, 6, 8)
+zabuza = Ninja("Zabuza", "fog", 9, 8, 3)
+deidara = Ninja("Deidara", "rock", 8, 10, 1)
+ninja_list=[naruto,gaara,zabuza,deidara]
+print("----------Naruto attack gaara--------")
+naruto.attack(gaara)
+for ninja in ninja_list:
+    print(ninja.name,ninja.hp)
