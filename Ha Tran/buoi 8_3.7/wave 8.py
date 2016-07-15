@@ -28,9 +28,9 @@ def Delete(name):
 #wave 8
 print('Hello, this is a salary program.')
 while True:
-    c=input('Please, select your function (Create,Read,Update,Delete:)')
+    c=input('Please, select your function (Create,Read/Update,Delete:)')
 
-    if c=='Create':
+    if c=='Create/Update':
         name,session,rate=input('Please enter your information:').split(' ')
         Create(name,session,rate)
     elif c=='Read':
