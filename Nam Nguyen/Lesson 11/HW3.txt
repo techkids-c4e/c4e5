@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>BTVN</title>
+</head>
+<body>
+	<img src="http://1.bp.blogspot.com/-DYUIbW9xMkA/VpjEAsqowHI/AAAAAAAARYk/AM5n4PvCaNc/s1600/Anh-dep-girl-xinh-de-thuong-nhat-%25281%2529.jpg" width="400" height="300">
+	<h1>Tôn H?ng Ð?c</h1>
+
+	<ul>
+	  <li><i>Birthdate:</i> 25/05/1988</li>
+	  <li><i>Email:</i>itsavavt@gmail.com</li>
+	  <li><i>Mobile:</i>0986755105</li>
+	  <li><i>Martial status:</i> Married</li>
+	</ul>
+
+	<h2>Education</h2>
+	<p>NEU University Hanoi</p>
+
+	<h2>Why did you come to TechKids</h2>
+	<p>Looking for weeds</p>
+</body>
+</html>
