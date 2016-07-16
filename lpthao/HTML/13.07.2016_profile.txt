@@ -1,0 +1,15 @@
+<div>
+<img src="https://crazyyue.files.wordpress.com/2012/07/hikaru-no-go-character-fujiwara-no-sai-_23_.jpg?w=479" alt=":)">
+</div>
+<h1>Thao Le Phuong</h1>
+<div><i>
+  <ul>
+  <li>Birthdate:1991</li>
+  <li>Email: thaolp179@gmail.com</li>
+  <li>Mobile: 0933622186</li>
+</ul>
+</i></div>
+<h2>Education</h2>
+<p>VNU</p>
+<h2>Why did you come to TechKids</h2>
+<p>jjjjjj</p>
