@@ -4,25 +4,25 @@ list_=[{"full_name":"Tran Quang Hiep","class":"C4E","rate":"$6.70","session":17}
 {"full_name":"Nguyen Thanh Cuong","class":"WEB","rate":"$7.34","session":19},
 {"full_name":"Ton Hong Duc","class":"WEB","rate":"$7.98","session":18},
 {"full_name":"Tran Duc Hung","class":"Android","rate":"$5.62","session":15}]
-name=input('Which one you want to know salary information?')
-def Read():
-    for dict_ in list_:
-        if dict_["full_name"]==name:
-            print(dict_["full_name"],"teached:",dict_["session"], "salary",dict_["rate"])
-Read()
-
-#wave 2
-name,session,rate=input('Please enter your information:').split(' ')
-def Create(a,b,c):
-    x={"full_name":a,
-       "session":b,
-       "rate":c
-       }
-    list_.append(x)
-    for dict_ in list_:
-        if dict_["full_name"]==name:
-            print(dict_["full_name"],"teached:",dict_["session"], "salary",dict_["rate"]) 
-Create(name,session,rate)
+##name=input('Which one you want to know salary information?')
+##def Read():
+##    for dict_ in list_:
+##        if dict_["full_name"]==name:
+##            print(dict_["full_name"],"teached:",dict_["session"], "salary",dict_["rate"])
+##Read()
+##
+###wave 2
+##name,session,rate=input('Please enter your information:').split(' ')
+##def Create(a,b,c):
+##    x={"full_name":a,
+##       "session":b,
+##       "rate":c
+##       }
+##    list_.append(x)
+##    for dict_ in list_:
+##        if dict_["full_name"]==name:
+##            print(dict_["full_name"],"teached:",dict_["session"], "salary",dict_["rate"]) 
+##Create(name,session,rate)
 
 #wave 5
 name=input('Which one you want to know the total salary')
@@ -35,6 +35,20 @@ def Payroll(name):
 print(name, 'total salary is:', Payroll(name))
 
 ###wave 6
+name,session,rate=input('Please enter your information:').split(',')
+def Update(a,b,c):
+    x={"full_name":a,
+       "session":b,
+       "rate":c
+       }
+    list_.append(x)
+    for dict_ in list_:
+        if dict_["full_name"]==name:
+            print(dict_["full_name"],"teached:",dict_["session"], "salary",dict_["rate"]) 
+Update(name,session,rate)
+print(list_)
+            
+            
 ##import pymongo
 ##
 ##from pymongo import MongoClient
