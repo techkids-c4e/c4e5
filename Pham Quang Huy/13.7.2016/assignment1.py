@@ -16,10 +16,11 @@ trangweb_vnexpress = BeautifulSoup(decoded_content,"html.parser")
 
 #get needed information
 
-tag_texts = trangweb_vnexpress.find_all("div", attrs = {"class":"title_news"})
-for tag_text in tag_texts:
-    try:
-        t = tag_text.find("a", attrs = {"class":"txt_link"})
-        print(t.get("title"))
-    except AttributeError:
-        continue
+tag_texts = trangweb_vnexpress.find("div", attrs={"class":"scroll-pane"}).get_text()
+print(tag_texts)
+##for t in tag_texts:
+##    print(t.get_text())
+
+##title_tags = trangweb_vnexpress.find_all("div",attrs={"class":"content_scoller width_common"})
+##for title_tag in title_tags:
+##    print(title_tag.get_text())
