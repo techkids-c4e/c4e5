@@ -11,7 +11,7 @@ open_file = open(file_name,"rb")
 
 decoded_content = open_file.read().decode("utf-8")
 
-#load vnexpress to BeautifulSoup
+#load unsplash to BeautifulSoup
 from bs4 import BeautifulSoup
 trangweb_unsplash = BeautifulSoup(decoded_content,"html.parser")
 
