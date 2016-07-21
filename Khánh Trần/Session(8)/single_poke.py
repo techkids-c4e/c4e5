@@ -11,9 +11,9 @@ open_file = open(file_name,"rb")
 from bs4 import BeautifulSoup as bs
 poke_ = bs(open_file,"html.parser")
 
-span = poke_.find("span",attrs={"id":"Generation_I"})
-if (span["id"]) == "Generation_I":
-    for i in range(250):
+##span = poke_.find("span",attrs={"id":"Generation_I"})
+##if (span["id"]) == "Generation_I":
+##    for i in range(250):
         
         #name
         table = poke_.find("table",attrs={"class":"roundy"})
