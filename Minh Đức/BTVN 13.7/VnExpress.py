@@ -9,5 +9,6 @@ decoded_content = open_file.read().decode('utf-8')
 
 from bs4 import BeautifulSoup
 trangweb_vnex=BeautifulSoup(decoded_content,"html.parser")
-print(trangweb_vnex.find("div", attrs={"class":"scroll-pane"}))
+x=trangweb_vnex.find("div", attrs={"class":"scroll-pane"})
+print(x.get_text())
 
