@@ -1,0 +1,26 @@
+body{
+    background-color: lightpink;
+}
+.anh{
+    text-align: center;
+}
+
+.loginbutton{
+    text-align: center;
+}
+
+.content p{
+    font-size: 40px;
+}
+.content{
+    margin-left: 115px;
+    font-weight: bold;
+}
+.click{
+    border-radius: 5px;
+    border: 0px;
+    padding: 7px;
+    background-color: cadetblue;
+    color: white;
+    font-weight: initial;
+}
