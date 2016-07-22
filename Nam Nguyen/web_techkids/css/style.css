@@ -1,0 +1,21 @@
+.khoahoc img {width: 100%}
+.khoahoc1 img {display: block;
+    margin: 0 auto 40px;
+    width: 45%;}
+form{border: 1px solid #999966;
+	width: 100%;
+	padding: 20px 20px 20px 20px;
+	margin: auto;
+}
+.form1{
+	margin: 0 5px 0 0;
+font-size: 1.6rem}
+.khoahoc1 p{font-size: 1.6rem;
+	margin: 0 0 20px 0;
+	text-align: justify;
+}
+.khoahoc1 button{background-color: #F47930;
+	border-radius: 12px;
+	padding: 10px 40px 10px 40px;
+	color: white;
+}

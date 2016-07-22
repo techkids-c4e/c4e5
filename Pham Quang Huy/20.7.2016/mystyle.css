@@ -1,0 +1,41 @@
+body{
+    text-align: center;
+    background-color: lightgrey;
+}
+
+.headtext{
+}
+
+.modal-dialog{
+    padding: 27px;
+    max-width: 200px;
+    width: 100%;
+    background-color: white;
+    margin: 0 auto;
+    overflow: hidden;
+    border: none;
+    border-color: transparent;  
+}
+
+.button1, .button2{
+    border: hidden;
+    padding: 10px;
+    margin: 10px;
+    margin-top: 10px; 
+    width: 175px;  
+	color: white;
+	border-width: thick;
+}
+
+.button1{
+    background-color: indianred;
+}
+
+.button2{
+    background-color: royalblue;
+}
+
+.box{
+    border: none;
+    border-color: transparent;
+}
