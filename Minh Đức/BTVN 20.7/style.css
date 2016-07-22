@@ -1,0 +1,41 @@
+body{
+    text-align: center;
+    background: url(Background.png) ;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    font-weight: 100;
+}
+.box{
+    width: 22%;
+    margin-left:39%;
+    background: white;
+    margin-top: 50px;
+    padding: 30px 0px 30px 0px;
+}
+
+.loginbox_field{
+    padding: 15px 0px 15px 30px;
+    margin: 5px;
+    width: 80%;
+    border: none;
+    
+}
+
+.loginbox__button{
+    padding: 10px 15px 8px 15px;
+    margin:15px;
+    width:75%;
+    color:white;
+    border:none;
+}
+
+#red{
+    background:url(Red.png);
+    
+}
+
+#blue{
+    background:url(Blue.png);
+}

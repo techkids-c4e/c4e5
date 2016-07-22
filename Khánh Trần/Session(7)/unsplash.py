@@ -12,8 +12,8 @@ decoded_ = open_file.read().decode('utf-8')
 from bs4 import BeautifulSoup as bs
 unsplash_ = bs(decoded_,"html.parser")
 
-img_tags = unsplash_.find_all("img")
+img_tags = unsplash_.find_all("img",attrs={"class":"cV68d"})
 for img in img_tags:
-    print(img.get("src"))
+    print(img.get("href"))
 
 

@@ -1,0 +1,47 @@
+body{
+    background-color: gray
+}
+.hi{
+    text-align: center
+}
+
+.loginbutton{
+    text-align: center
+}
+
+.loginbutton p{
+    border-top-style: hidden;
+    border-left-style: hidden;
+    border-right-style: hidden;
+}
+.loginbutton p{
+    margin-top: 20px
+}
+.khung{
+    text-align: center
+}
+.khung{
+    margin-top: 20px
+}
+
+.khung2{
+    text-align: center
+}
+.khung2{
+    margin-top: 20px
+}
+.hello{
+    background: white
+}
+.hello{
+    margin-left: 500px
+}
+.hello{
+    margin-right: 500px
+}
+.hello{
+    padding-top: 15px
+}
+.hello{
+    padding-bottom: 15px
+}
