@@ -1,0 +1,41 @@
+.whole-container{
+    background-color: white;
+}
+.general img{
+    width: 50%;
+}
+.mid-col img{
+}
+.text p{
+    text-align: left;
+    font-size: medium;
+}
+.all-col{
+    border: 1px solid lightgrey;
+    padding: 20px;
+    margin: 10px;
+    align-self: center;
+}
+.align{
+    display: flex;
+}
+
+.button{
+    text-center: 100%;
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+.button1{
+    border: none;
+    background-color: #F47930;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+    color: white;   
+    width: 60%;
+}
+.button1:focus{
+    outline:none;
+}
