@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+     <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../static/project.css">
+    <title>PROJECT</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="/">SALE-A-THON</a>
+        </div>
+    <ul class="nav navbar-nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/trends">Trends</a></li>
+        <li><a href="/about-us">About Us</a></li>
+        <li><a href="/contact">Contact Us</a></li>
+    </ul>
+      </div>
+    </nav>
+
+    <input type="text" name="search" placeholder="Mặt hàng tìm kiếm">
+    <input type="image" value="submit" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRWqc-bzFrRTfR_Cj02HZtOMbh5b7n-0KJm0Vq4vcMlFM5flmny6Q" alt="" onMouseOver="this.src='https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRWqc-bzFrRTfR_Cj02HZtOMbh5b7n-0KJm0Vq4vcMlFM5flmny6Q'">
+    <div class="row">
+        {% for id in IDs %}
+
+        <div class="col-sm-4">#}
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3D{{ id }}&width=500" width="500" height="784" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>"
+        </div>
+        {% endfor %}
+{#        <div class="col-sm-4">#}
+{#            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%{&width=430" width="430" height="784" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>#}
+{#            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2F1oceans%2Fposts%2F1671636469813190&width=400" width="400" height="663" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>#}
+{#        </div>#}
+{#        <div class="col-sm-4">#}
+
+{#            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fmedia%2Fset%2F%3Fset%3Da.796010287168902.1073741894.252381894865080%26type%3D3&width=430" width="430" height="762" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>#}
+{#            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2F1oceans%2Fposts%2F1671636469813190&width=400" #}
+{#        <div class="col-sm-4">#}
+{#            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2F1oceans%2Fposts%2F1671636469813190&width=400" width="400" height="663" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>#}
+{#            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2F91Store%2Fposts%2F1201870523177392&width=400" width="400" height="929" style="border:none;overflow: visible " scrolling="yes" frameborder="0" allowTransparency="true"></iframe>#}
+{#        </div>#}
+
+</body>
+</html>
