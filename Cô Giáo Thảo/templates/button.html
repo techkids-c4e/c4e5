@@ -1,0 +1,18 @@
+
+{% extends "layout.html" %}
+{% block body %}
+
+
+
+
+    <div class="container">
+        <section class="color-4">
+            {% for item in listBenh %}
+                <a href="/{{ item.link }}"><button class="btn btn-4 btn-4b icon-arrow-right">{{ item.name }}</button></a>
+            {% endfor %}
+
+        </section>
+    </div>
+
+
+{% endblock %}

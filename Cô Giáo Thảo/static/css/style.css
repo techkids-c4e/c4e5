@@ -1,0 +1,43 @@
+img.skull {display: block; margin-left: auto; margin-right: auto;}
+
+img.main {display: block; margin-left: 45.5%; margin-right: auto;}
+
+img.leg {display: block; margin-left: auto; margin-right: auto;}
+
+img.left {display: block; margin-left: 41.5%; margin-right: auto;margin-top: -44.2%;}
+
+img.right {display: block; margin-left: auto; margin-right: 42.5% ;margin-top: -44.2%;}
+
+
+.jumbotron h3 {
+  text-align: center;
+  font-family: 'Lobster', cursive;
+  font-size: 400%;
+  margin-top: -2em;
+}
+
+.jumbotron h4 {
+  text-align: center;
+  margin-top: 2%;
+  font-size: 200%;
+}
+
+body h5 {
+  margin-bottom: 99%%;
+  text-align: center;
+  font-size: 150%;
+}
+
+#x {
+  font-size: 700%;
+  font-family: 'Bungee Shade', cursive;
+  text-align: center;
+  margin-top: 0em;
+}
+
+.jumbotron h2 {
+  text-align: center;
+  margin-top: 5%
+}
+body a:hover {cursor:  url("http://cur.cursors-4u.net/others/oth-5/oth446.cur"),  progress;}
+BODY{cursor: url("http://cur.cursors-4u.net/others/oth-5/oth446.cur"), auto;}
