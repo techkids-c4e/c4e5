@@ -13,11 +13,7 @@
 .justify{
     text-align: justify;
     font-family: Calibri;
-    font-weight: bolder;
-}
-
-.col-sm-6{
-    bottom: 20px;
+    font-weight: 400;
 }
 .framewrapper img{
     width:45%;
