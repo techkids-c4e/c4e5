@@ -16,8 +16,5 @@ trangweb_unsplash = BeautifulSoup(decoded_content,"html.parser")
 for link in trangweb_unsplash.find_all("a", attrs = {"class":"cV68d"}):
     t = link.get("style")
     t = t.split(")")[0].split("(")[1]
-    res = ''
-    for i in range(1, len(t) - 1):
-        res = res + t[i]
-    print(res)
+    print(t.replace('"',""))
     print()

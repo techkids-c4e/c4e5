@@ -33,8 +33,24 @@ class pokemon:
         self.img =  self.get_img()
         self.bg_colorcode = self.get_backgoundcolorcode()
 
-bulbasaur = pokemon("http://bulbapedia.bulbagarden.net/wiki/Bulbasaur_(Pok%C3%A9mon)")
-print(bulbasaur.img)
-print(bulbasaur.name)
-print(bulbasaur.code)
-print(bulbasaur.bg_colorcode)
+#bulbasaur = pokemon("http://bulbapedia.bulbagarden.net/wiki/Bulbasaur_(Pok%C3%A9mon)")
+pokemon_ = requests.get("http://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_National_Pok%C3%A9dex_number")
+soup_ = BeautifulSoup(pokemon_.content,'html.parser')
+listpokemon = soup_.find("table", attrs = {"style":"center", "style":"border-radius: 10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; -khtml-border-radius: 10px; -icab-border-radius: 10px; -o-border-radius: 10px;; border: 2px solid #FF1111; background: #FF1111;"})
+listpokemon = soup_.find_all("tr")
+count = 0
+for pokemon in listpokemon:
+    count = count + 1
+    if count == 1 or count == 2: continue
+    else:
+        info = pokemon.find_all("td")
+        
+        res = info[3].a.get("href"))
+        res = "http://bulbapedia.bulbagarden.net" + res
+        pokemon__[count - 2] = pokemon(res)
+        t = input()
+    
+##print(bulbasaur.img)
+##print(bulbasaur.name)
+##print(bulbasaur.code)
+##print(bulbasaur.bg_colorcode)

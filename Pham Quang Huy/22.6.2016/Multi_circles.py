@@ -6,6 +6,6 @@ for j in range(30):
     for i in range (360):
         forward(1.5)
         left(1)
-    left(12)
+    left(360/30)
 
 
